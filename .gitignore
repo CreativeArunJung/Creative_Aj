@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# local runtime/log files
+.codex/
+*.log
+
+# OS/editor metadata
+.DS_Store
+._*
+**/._*
+
+# environment files
+.env
+.env*.local

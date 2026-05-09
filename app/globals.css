@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbfcff;
+  --foreground: #111827;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: #bfdbfe;
+  color: #0f172a;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.section-anchor {
+  scroll-margin-top: 96px;
+}
+
+.focus-ring {
+  outline: none;
+}
+
+.focus-ring:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.35);
+  outline-offset: 3px;
+}
+
+.imessage-bubble {
+  position: relative;
+  display: inline-block;
+  max-width: 92%;
+  border-radius: 21px 21px 5px 21px;
+  background: linear-gradient(180deg, #2f8cff 0%, #007aff 100%);
+  box-shadow: 0 4px 10px rgba(0, 122, 255, 0.18);
+}
+
+.imessage-bubble::before {
+  content: "";
+  position: absolute;
+  right: -8px;
+  bottom: 0;
+  width: 18px;
+  height: 20px;
+  background: #007aff;
+  border-bottom-left-radius: 16px 14px;
+}
+
+.imessage-bubble::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 10px;
+  height: 21px;
+  background: #f8fafc;
+  border-bottom-left-radius: 10px;
+}
+
+@media (min-width: 640px) {
+  .imessage-bubble {
+    max-width: 86%;
+  }
+}
