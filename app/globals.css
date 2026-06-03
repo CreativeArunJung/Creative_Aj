@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-orange: #ff7418;
+  --brand-teal: #164866;
+  --brand-ink: #06131c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--brand-ink);
+  background:
+    radial-gradient(circle at top left, rgba(255, 116, 24, 0.09), transparent 34rem),
+    linear-gradient(180deg, #fffaf4 0%, #ffffff 44%, #f7fbfd 100%);
+}
+
+::selection {
+  background: rgba(255, 116, 24, 0.22);
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea {
+  width: 100% !important;
+  color: var(--brand-ink) !important;
+  background: transparent !important;
+  font-family: inherit !important;
+}
+
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__container,
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__wrapper,
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__form {
+  width: 100% !important;
+  max-width: none !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__form {
+  padding: 0 !important;
+}
+
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__title {
+  color: var(--brand-ink) !important;
+  font-family: inherit !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
+  text-align: left !important;
+}
+
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__subtitle {
+  color: rgb(51 65 85) !important;
+  font-family: inherit !important;
+  font-size: 1rem !important;
+  line-height: 1.7 !important;
+  text-align: left !important;
+}
+
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__fields {
+  display: grid !important;
+  gap: 1rem !important;
+}
+
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__field {
+  margin: 0 !important;
+}
+
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__control {
+  min-height: 3.35rem !important;
+  border: 1px solid rgba(6, 19, 28, 0.14) !important;
+  border-radius: 0.9rem !important;
+  background: #ffffff !important;
+  color: var(--brand-ink) !important;
+  font-family: inherit !important;
+  font-size: 1rem !important;
+  line-height: 1.4 !important;
+  padding: 1.45rem 1rem 0.55rem !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__control:focus {
+  border-color: var(--brand-orange) !important;
+  box-shadow: 0 0 0 4px rgba(255, 116, 24, 0.12) !important;
+}
+
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__label {
+  color: rgb(71 85 105) !important;
+  font-family: inherit !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  left: 1rem !important;
+  line-height: 1 !important;
+  padding: 0 !important;
+  top: 0.78rem !important;
+}
+
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__footer {
+  margin-top: 1.25rem !important;
+}
+
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__button {
+  width: 100% !important;
+  min-height: 3.5rem !important;
+  border: 0 !important;
+  border-radius: 9999px !important;
+  background: var(--brand-orange) !important;
+  color: #ffffff !important;
+  font-family: inherit !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+  box-shadow: 0 20px 45px rgba(255, 116, 24, 0.28) !important;
+  transition: background-color 0.2s ease, transform 0.2s ease !important;
+}
+
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__button:hover {
+  background: #ef650d !important;
+  transform: translateY(-1px) !important;
+}
+
+.flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__success-message {
+  color: var(--brand-teal) !important;
+  font-family: inherit !important;
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+}
+
+@media (min-width: 640px) {
+  .flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .flodesk-shell [data-ff-el="root"].ff-6a1d5ed1bd894dbe346974ea .ff-6a1d5ed1bd894dbe346974ea__field:nth-of-type(5) {
+    grid-column: 1 / -1 !important;
+  }
+}
