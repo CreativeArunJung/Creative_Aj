@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { MessageCircle, PlayCircle } from "lucide-react";
 
-const vimeoVideoUrl = "";
+const vimeoVideoUrl = "https://vimeo.com/1199229968?fl=ip&fe=ec";
 const whatsappChatUrl = "https://wa.me/9779807985364";
 
 export const metadata: Metadata = {
