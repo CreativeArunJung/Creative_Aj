@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { MessageCircle, PlayCircle } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+import VimeoPlayer from "@/components/VimeoPlayer";
 
-const vimeoVideoUrl = "https://vimeo.com/1199229968?fl=ip&fe=ec";
+const vimeoVideoUrl = "https://vimeo.com/1199359767?fl=ip&fe=ec";
 const whatsappChatUrl = "https://wa.me/9779807985364";
 
 export const metadata: Metadata = {
@@ -35,19 +36,12 @@ export default function ThanksPage() {
         <div className="mt-9 w-full max-w-3xl overflow-hidden rounded-2xl border border-brand-ink/10 bg-white shadow-premium">
           <div className="aspect-video w-full bg-brand-ink">
             {embedUrl ? (
-              <iframe
-                src={embedUrl}
+              <VimeoPlayer
+                embedUrl={embedUrl}
                 title="Consultation next steps video"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                className="h-full w-full"
               />
             ) : (
               <div className="flex h-full flex-col items-center justify-center px-6 text-center text-white">
-                <PlayCircle
-                  aria-hidden="true"
-                  className="mb-4 h-12 w-12 text-brand-orange"
-                />
                 <p className="max-w-md text-base font-semibold leading-7">
                   Vimeo video will appear here once the video link is provided.
                 </p>
@@ -76,5 +70,7 @@ function getVimeoEmbedUrl(videoUrl: string) {
   }
 
   const match = videoUrl.match(/vimeo\.com\/(?:video\/)?(\d+)/);
-  return match ? `https://player.vimeo.com/video/${match[1]}` : videoUrl;
+  return match
+    ? `https://player.vimeo.com/video/${match[1]}?api=1&player_id=thanks-video&controls=0&title=0&byline=0&portrait=0&badge=0&pip=0`
+    : videoUrl;
 }
